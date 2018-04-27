@@ -1,6 +1,5 @@
 
 #include "balanced.h"
-
 // Returns true if the parenthesis,
 //  square brackets, and curly braces
 //  in text are balanced
