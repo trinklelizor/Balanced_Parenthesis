@@ -7,12 +7,12 @@
 CXXFLAGS=-std=c++11 -fprofile-arcs -ftest-coverage -g
 
 balanced.o: 
-	g++ $(CXXFLAGS) -g -c balanced.cpp -o balanced.o
+	g++ $(CXXFLAGS) -c balanced.cpp -o balanced.o
 
 
 # The "balanced.o" after the "test:" is a dependency:
 # make will run the balanced.o target (if out of date)
 # before running the commands for test
 test: balanced.o
-	g++ $(CXXFLAGS) -g *.o balancedTest.cpp -o balancedTest
+	g++ $(CXXFLAGS) *.o balancedTest.cpp -o balancedTest
 	./balancedTest
