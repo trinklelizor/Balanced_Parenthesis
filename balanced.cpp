@@ -35,7 +35,6 @@ bool isBalanced(const std::string &text){
       }
       unmatched.pop();
       break;
-
     }
   }
   if (!unmatched.empty())
